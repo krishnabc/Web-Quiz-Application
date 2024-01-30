@@ -1,0 +1,30 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome to Quizy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+    <body>
+      {% include "components/navbar.html" %}
+      <!-- it is an example of template inheritance 
+      what is template inheritence
+basically it is like reusing the code, if some portion of code is multiple time use then we can use it directly by creating components so we have to only declare that use these component instead of using or writing same code multiple time these process is known as template inheritence-->
+      {% block content %}
+
+        <!--example of template inheritance-->
+
+
+      {% endblock content %}   
+        
+
+
+      {%include "components/footer.html"%}
+    </body>
+</html>
+
